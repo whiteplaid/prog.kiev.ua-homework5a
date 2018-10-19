@@ -57,7 +57,6 @@ public class FileCopy {
 
 
 	public Boolean FileCopyMethod (File sourceDir, File targetDir, String ext) throws IOException {
-		if (sourceDir == null || targetDir == null || ext == null) return false;
 		File[] paths;
 		
 		FilenameFilter fileFilter = new FilenameFilter() {
