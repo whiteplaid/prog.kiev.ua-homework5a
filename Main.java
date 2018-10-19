@@ -9,11 +9,11 @@ public class Main {
 		File file = null;
 		File target = null;
 		String ext = ".pdf";
+		FileCopy copy = new FileCopy();
 		try {
 			
 			file = new File("src/com/homework/filecopy/texts/");
 			target = new File ("src/com/homework/filecopy/");
-			FileCopy copy = new FileCopy();
 			System.out.println(copy.FileCopyMethod(file, target, ext));
 			
 		} catch (IOException e) {
